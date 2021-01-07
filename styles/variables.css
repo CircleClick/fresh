@@ -18,3 +18,15 @@ html {
   --color-bg: var(--color-primary);
   --color-overlay: var(--color-overlay-white);
 }
+
+/* sizes */
+html {
+  --pad: 18px;
+}
+
+/* typography */
+html {
+  --font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-family-heading: var(--font-family);
+}

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Logo from '../components/Logo/Logo'
+import Stack from '../components/Stack/Stack'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -9,8 +10,10 @@ export default function Home() {
         <title>What's Fresh @ CircleClick</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Logo/>
-      <h1>What&apos;s Fresh</h1>
+      <Stack>
+        <Logo/>
+        <h1>What&apos;s Fresh</h1>
+      </Stack>
     </div>
   )
 }
