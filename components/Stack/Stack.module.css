@@ -19,3 +19,48 @@
 .row > * + * {
   margin-left: var(--pad);
 }
+
+.fullWidth {
+  width: 100%;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyAround {
+  justify-content: space-around;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.justifyEven {
+  justify-content: space-evenly;
+}
+
+.alignStretch {
+  align-items: stretch;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.alignStart {
+  align-items: flex-start;
+}
+
+.alignEnd {
+  align-items: flex-end;
+}
+
