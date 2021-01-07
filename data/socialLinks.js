@@ -1,9 +1,9 @@
 /* Social links */
 export default [
-  {
-    platform: 'web',
-    url: 'https://www.circleclick.com/',
-  },
+  // {
+  //   platform: 'web',
+  //   url: 'https://www.circleclick.com/',
+  // },
   {
     platform: 'twitter',
     url: 'https://twitter.com/circleclick',
