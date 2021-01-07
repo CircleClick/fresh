@@ -1,5 +1,7 @@
-export default function({ href, children }) {
+import styles from "./LinkRow.module.css"
+
+export default function LinkRow({ href, children, ...rest }) {
   return (
-    <div>{ children }</div>
+    <a className={styles.linkRow} href={href} {...rest}>{ children }</a>
   );
 }

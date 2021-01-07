@@ -1,0 +1,4 @@
+.linkRow {
+  background: var(--color-overlay);
+  padding: var(--pad);
+}
