@@ -1,5 +1,5 @@
 .container {
-  min-height: 100vh;
+  min-height: var(--viewportHeight, 100vh);
   padding: var(--pad, 1rem);
   display: flex;
   flex-direction: column;

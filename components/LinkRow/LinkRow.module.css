@@ -7,4 +7,5 @@
 
 .linkRow:hover {
   background: var(--color-accent);
+  color: var(--color-text);
 }
