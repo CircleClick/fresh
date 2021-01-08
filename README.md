@@ -1,3 +1,5 @@
+## Welcome
+
 This is a LinkTree alternative built using NextJS with data coming from a WordPress API.
 
 The project is hosted here:
