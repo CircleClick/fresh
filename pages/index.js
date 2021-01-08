@@ -16,7 +16,7 @@ export default function Home(props) {
     <div className={styles.container}>
       <Head>
         <title>What's Fresh @ CircleClick</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Container>
         <Stack justify='between'>
