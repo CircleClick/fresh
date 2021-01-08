@@ -29,6 +29,8 @@ html {
   --font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-family-heading: var(--font-family);
+  --font-weight: 600;
+  --font-weight-heading: 900;
   --font-size: 17px;
   --font-size-h1: 48px;
 }
