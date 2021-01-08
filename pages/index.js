@@ -8,6 +8,9 @@ import LinkRow from '../components/LinkRow/LinkRow'
 import Container from '../components/Container/Container'
 import { getLinks } from '../lib/links'
 
+const siteTitle = "What's Fresh @ CircleClick";
+const siteDescription = "Here are some of our latest blog posts and media appearances!";
+
 export default function Home(props) {
 
   const {links: currentLinks} = props;
@@ -15,8 +18,18 @@ export default function Home(props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>What's Fresh @ CircleClick</title>
+        <title>{ siteTitle }</title>
         <link rel="icon" href="/favicon.png" />
+        <meta
+          name="description"
+          content={ siteDescription }
+        />
+        <meta
+          property="og:image"
+          content="https://latest.circleclick.com/img/social-graphic.jpg"
+        />
+        <meta name="og:title" content={ siteTitle } />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Container>
         <Stack justify='between'>
