@@ -1,4 +1,10 @@
 .linkRow {
   background: var(--color-overlay);
   padding: var(--pad);
+  border-radius: var(--pad);
+  transition: background-color 0.1s linear;
+}
+
+.linkRow:hover {
+  background: var(--color-accent);
 }

@@ -16,10 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <Stack>
+        <Stack justify='between'>
           <Stack>
             <Logo/>
-            <h1>What&apos;s Fresh</h1>
+            <h1 style={{ fontStyle: 'italic' }}>What&apos;s Fresh</h1>
             <Stack align='stretch'>
             {currentLinks.map((link, index) => (
               <LinkRow href={link.url} key={index}>{link.name}</LinkRow>
