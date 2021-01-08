@@ -31,7 +31,8 @@ export default function SocialIcons({ socialLinks = [], newWindow = false }) {
         href={socialLink.url}
         key={socialLink.url}
         target={newWindow ? '_blank' : '_self'}
-        className={styles.icon}>
+        className={styles.icon}
+        aria-label={socialLink.platform}>
         <SocialIcon platform={socialLink.platform}/>
       </a>
     ))}
