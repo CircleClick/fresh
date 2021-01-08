@@ -18,7 +18,7 @@ export default function Home() {
       <Container>
         <Stack justify='between'>
           <Stack>
-            <Logo/>
+            <a href="https://www.circleclick.com/"><Logo/></a>
             <h1 style={{ fontStyle: 'italic' }}>What&apos;s Fresh</h1>
             <Stack align='stretch'>
             {currentLinks.map((link, index) => (
