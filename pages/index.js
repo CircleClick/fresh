@@ -6,6 +6,7 @@ import socialLinks from '../data/socialLinks'
 import currentLinks from '../data/links'
 import SocialIcons from '../components/SocialIcons/SocialIcons'
 import LinkRow from '../components/LinkRow/LinkRow'
+import Container from '../components/Container/Container'
 
 export default function Home() {
   return (
@@ -14,20 +15,22 @@ export default function Home() {
         <title>What's Fresh @ CircleClick</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Stack>
+      <Container>
         <Stack>
-          <Logo/>
-          <h1>What&apos;s Fresh</h1>
-          <Stack align='stretch'>
-          {currentLinks.map((link, index) => (
-            <LinkRow href={link.url} key={index}>{link.name}</LinkRow>
-          ))}
+          <Stack>
+            <Logo/>
+            <h1>What&apos;s Fresh</h1>
+            <Stack align='stretch'>
+            {currentLinks.map((link, index) => (
+              <LinkRow href={link.url} key={index}>{link.name}</LinkRow>
+            ))}
+            </Stack>
+          </Stack>
+          <Stack direction='row' justify='even' fullWidth={true}>
+            <SocialIcons socialLinks={socialLinks}/>
           </Stack>
         </Stack>
-        <Stack direction='row' justify='even' fullWidth={true}>
-          <SocialIcons socialLinks={socialLinks}/>
-        </Stack>
-      </Stack>
+      </Container>
     </div>
   )
 }
