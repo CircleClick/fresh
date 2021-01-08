@@ -3,12 +3,15 @@ import Logo from '../components/Logo/Logo'
 import Stack from '../components/Stack/Stack'
 import styles from '../styles/Home.module.css'
 import socialLinks from '../data/socialLinks'
-import currentLinks from '../data/links'
 import SocialIcons from '../components/SocialIcons/SocialIcons'
 import LinkRow from '../components/LinkRow/LinkRow'
 import Container from '../components/Container/Container'
+import { getLinks } from '../lib/links'
 
-export default function Home() {
+export default function Home(props) {
+
+  const {links: currentLinks} = props;
+
   return (
     <div className={styles.container}>
       <Head>
@@ -33,4 +36,12 @@ export default function Home() {
       </Container>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const links = await getLinks();
+
+  return {
+    props: {links}
+  }
 }
